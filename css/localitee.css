@@ -36,7 +36,7 @@ text-decoration: underline;
 {
 margin-top: 10px;
 margin-bottom: 20px;
-border-bottom: solid 3px #ff6a30;
+border-bottom: solid 6px #ff6a30;
 border-top: solid 1px #ececec;
 }
 
@@ -81,6 +81,7 @@ color: #ff6a30;
 font-size: 60px;
 line-height: 60px;
 white-space:nowrap;
+color: #ff6a30;
 }
 
 .navbar .nav .active > a
@@ -101,6 +102,7 @@ color: #78ae39;
 -o-border-radius: 4px 4px 0 0;
 border-radius: 4px 4px 0 0;
 padding: 8px 15px 8px 15px;
+margin-right: 1px;
 }
 
 .navbar .nav li > a:hover
@@ -117,6 +119,10 @@ background-color: #ff6a30 !important;
 }
 
 
+.navbar .dropdown-menu li a i
+{
+margin-right: 5px;
+}
 
 /* search bar */
 
@@ -257,7 +263,7 @@ color: #545454;
 color: #ff6a30;
 }
 
-.box .featured img, .col2box .featured img
+.box img, .col2box .featured img
 {
 margin: 0 0 10px 10px;
 padding: 2px;
@@ -272,12 +278,16 @@ float: left;
 width: 40%;
 padding-left: 10px;
 border-left: solid 1px #ccc;
-
 }
 
 .box .carousel .item
 {
 padding: 0 90px;
+}
+
+.carousel-control 
+{
+
 }
 
 
@@ -301,6 +311,22 @@ padding: 0 90px;
 	{
 	width: 150px;
 	}
+	
+	.col2box .featured
+	{
+	width: 100%;
+	float: none;
+	padding-right: 0px;
+	}
+	
+	.col2box .top-news
+	{
+	float: none;
+	width: 100%;
+	padding-left: 0px;
+	border-left: none;
+	}
+	
 }
 
 @media (max-width: 767px) {
