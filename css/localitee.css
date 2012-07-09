@@ -219,7 +219,18 @@ background: #ff6a30;
   background-color: #408140 \9;
 }
 
+
+
 .box
+{
+clear: left;
+margin-bottom: 10px;
+padding: 20px;
+border-bottom: solid 1px #ccc;
+background: #fff;
+}
+
+.col2box
 {
 float: left;
 clear: left;
@@ -229,24 +240,24 @@ border-bottom: solid 1px #ccc;
 background: #fff;
 }
 
-.box .featured
+.col2box .featured
 {
 width: 50%;
 float: left;
 padding-right: 10px;
 }
 
-.box h2 a
+.box h2 a, .col2box h2 a
 {
 color: #545454;
 }
 
-.box h2 a:hover
+.box h2 a:hover, .col2box h2 a:hover
 {
 color: #ff6a30;
 }
 
-.box .featured img
+.box .featured img, .col2box .featured img
 {
 margin: 0 0 10px 10px;
 padding: 2px;
@@ -255,7 +266,7 @@ float: right;
 max-width: 50%;
 }
 
-.box .top-news
+.col2box .top-news
 {
 float: left;
 width: 40%;
