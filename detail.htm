@@ -1,0 +1,198 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Localitee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/localitee.css" rel="stylesheet"/>
+
+    <link href="css/bootstrap-responsive.css" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif' rel='stylesheet' type='text/css'/>
+
+    
+    <!--[if lte IE 6]>
+		<link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" media="screen, projection">
+		<link rel="stylesheet" href="css/ie6.css"/>	
+	<![endif]-->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+  
+  <div class="alert fade in">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <span>To go back to the main menu, <a href="index.htm" title="Go back to main menu">click here</a>.</span>
+   </div>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          
+          <div class="btn-group pull-right account">
+            <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="icon-cog"></i>  Hello Username
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="icon-user"></i> Your profile</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="icon-map-marker"></i> Postcode radius: <span>10 miles</span></a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="icon-lock"></i> Sign Out</a></li>
+            </ul>
+          </div> 
+          
+          <div id="branding">
+          	<div class="logo"><a href="#">Localitee<span>.</span></a></div>
+          	<div class="postcode">SK24 3EF</div>
+          </div>
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="home.htm">Home</a></li>
+              <li><a href="#about">About Localitee</a></li>
+              <li><a href="#contact">Contact</a></li>
+               <li><a href="#news">News</a></li>
+                <li><a href="#events">Events</a></li>
+                 <li><a href="#business">Business</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid advancedsearch">
+        <div class="span12">
+        
+          <div class="searchbox">
+            
+          	<form action="" id="searchform" method="">
+          		<input type="text" onblur="if (this.value == '') {this.value = 'Search Localitee...';}" onfocus="if (this.value == 'Search Localitee...') {this.value = '';}" value="Search Localitee..." id="search" name="search"/>
+          		<input type="submit" class="btn btn-success" value="Search" name="Submit"/>
+          		<div class="advancedsearch">
+          			<a href="#" data-toggle="collapse" data-target="#advancedsearch">
+	          		Advanced search options
+	          		</a>
+          		</div><!-- /.advancedsearch -->
+ 
+          		<div id="advancedsearch" class="collapse">
+          		
+          			<p>Filter search by content type:</p>
+          			<ul>
+          			
+	          			<li><label for="filternews">News</label>
+	          		<input id="filternews" type="checkbox" value="news" name="filternews"/></li>
+	          			<li><label for="filternews">Events</label>
+	          		<input id="filternews" type="checkbox" value="news" name="filternews"/></li>
+	          			<li><label for="filternews">Business</label>
+	          		<input id="filternews" type="checkbox" value="news" name="filternews"/></li>
+	          			
+          			</ul>
+
+	          		
+          		</div><!-- /#advancedsearch -->
+          	</form>
+            
+          </div><!-- /.searchbox -->
+        </div><!-- /.span12 -->
+      </div><!-- /.row-fluid -->
+          
+          
+          <div class="row-fluid">
+          
+            <div class="span12">  
+            
+            	<div class="box">
+            
+	            Business name and intro text
+	            
+            	</div>
+                            
+              
+            </div><!--/span-->          
+
+          </div><!--/row-fluid-->
+          
+          <div class="row-fluid">
+          
+            <div class="span6">  
+            
+            	<div class="box">
+            
+	            Contact information
+	            
+            	</div>
+                            
+              
+            </div><!--/span-->
+            
+            <div class="span6">  
+            
+            	<div class="box">
+            
+	            Recent activity     
+	            
+            	</div>        
+              
+            </div><!--/span-->
+            
+
+          </div><!--/row-fluid-->
+
+      <footer>
+      
+      	 <div class="row-fluid">
+      	 
+      	 	 <div class="span9">
+	      	 
+	      	 	<ul>
+		      	 	<li><a href="">Footer link 1</a></li>
+		      	 	<li><a href="">Footer link 2</a></li>
+		      	 	<li><a href="">Footer link 3</a></li> 	
+	      	 	</ul>
+	      	 
+	      	 
+	      	 </div>
+      	 
+      	 
+	      	 <div class="span3">
+	      	 
+		      	  <p>&copy; Company 2012</p>
+		      	 
+	      	 </div> 	 
+	      	 
+      	 </div>
+        
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script src="js/bootstrap.js"></script> 
+
+  </body>
+</html>
