@@ -5,7 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <title>Localitee</title>
+    <title>SK24 3EF | Localitee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
@@ -32,10 +32,22 @@
 
   <body>
   
-  <div class="alert fade in">
+    <!-- remove this alert box when theming starts -->
+    <div class="alert fade in">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <span>To go back to the main menu, <a href="index.htm" title="Go back to main menu">click here</a>.</span>
    </div>
+   <!-- remove this alert box when theming starts -->
+  
+  <div id="access" class="offscreen">
+  
+  		
+  	<ul role="navigation">
+		<li><a href="#search" title="Skip to main navigation">Skip to search</a></li>
+		<li><a href="#maincontent" title="Skip to content">Skip to content</a></li>
+	</ul>
+  
+ </div>
 
     <div class="navbar">
       <div class="navbar-inner">
@@ -47,7 +59,7 @@
           </a>
           
           
-          <div class="btn-group pull-right account">
+          <div class="btn-group pull-right account" role="login">
             <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#">
               <i class="icon-cog"></i>  Hello Username
               <span class="caret"></span>
@@ -67,7 +79,7 @@
           </div>
           
           <div class="nav-collapse">
-            <ul class="nav">
+            <ul class="nav" role="navigation">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About Localitee</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -84,7 +96,7 @@
       <div class="row-fluid advancedsearch">
         <div class="span12">
         
-          <div class="searchbox">
+          <div class="searchbox" role="search">
             
           	<form action="" id="searchform" method="">
           		<input type="text" onblur="if (this.value == '') {this.value = 'Search Localitee...';}" onfocus="if (this.value == 'Search Localitee...') {this.value = '';}" value="Search Localitee..." id="search" name="search"/>
@@ -118,7 +130,7 @@
       </div><!-- /.row-fluid -->
           
           
-          <div class="row-fluid">
+          <div class="row-fluid" id="maincontent" role="content">
           
             <div class="span8">        
                      
