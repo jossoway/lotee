@@ -98,8 +98,8 @@
         
           <div class="searchbox" role="search">
             
-          	<form action="" id="searchform" method="">
-          		<input type="text" onblur="if (this.value == '') {this.value = 'Search Localitee...';}" onfocus="if (this.value == 'Search Localitee...') {this.value = '';}" value="Search Localitee..." id="search" name="search"/>
+          	<form action="#" id="searchform" method="get" name="searchform">
+          		<input type="text" placeholder="Search Localitee" id="search" name="search"/>
           		<input type="submit" class="btn btn-success" value="Search" name="Submit"/>
           		<div class="advancedsearch">
           			<a href="#" data-toggle="collapse" data-target="#advancedsearch">
@@ -115,9 +115,11 @@
 	          			<li><label for="filternews">News</label>
 	          		<input id="filternews" type="checkbox" value="news" name="filternews"/></li>
 	          			<li><label for="filternews">Events</label>
-	          		<input id="filternews" type="checkbox" value="news" name="filternews"/></li>
+	          		<input id="filterevents" type="checkbox" value="news" name="filterevents"/></li>
 	          			<li><label for="filternews">Business</label>
-	          		<input id="filternews" type="checkbox" value="news" name="filternews"/></li>
+	          		<input id="filterbusiness" type="checkbox" value="news" name="filterbusiness"/></li>
+	          			<li><label for="filternews">Discussions</label>
+	          		<input id="filterdiscussions" type="checkbox" value="news" name="filterdiscussions"/></li>
 	          			
           			</ul>
 
@@ -130,7 +132,7 @@
       </div><!-- /.row-fluid -->
           
           
-          <div class="row-fluid" id="maincontent" role="content">
+          <div class="row-fluid" id="maincontent" role="main">
           
             <div class="span8">  
             
@@ -181,7 +183,7 @@
 	            		<p>I saw for the first time the earth's shape. I could easily see the shores of continents, islands, great rivers, folds of the terrain, large bodies of water. The horizon is dark blue, smoothly turning to black. . . the feelings which filled me I can express with one word—joy.</p>
 	            		<p><a class="btn btn-success btn-mini" href="#">View details &rarr;</a></p></li>
 	            		
-	            		<li class="discussion"<h4><a href="">Discussion title</a></h4>
+	            		<li class="discussion"><h4><a href="">Discussion title</a></h4>
 	            		<p>I saw for the first time the earth's shape. I could easily see the shores of continents, islands, great rivers, folds of the terrain, large bodies of water. The horizon is dark blue, smoothly turning to black. . . the feelings which filled me I can express with one word—joy.</p>
 	            		<p><a class="btn btn-success btn-mini" href="#">View details &rarr;</a></p></li>
 	            		

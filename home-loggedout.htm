@@ -59,13 +59,12 @@
           </a>
           
           
-          <div class="btn-group pull-right account" role="login">
+          <div class="btn-group pull-right account">
             <a class="btn btn-success dropdown-toggle login_btn" data-toggle="dropdown" href="#" id="tab">
               <i class="icon-cog"></i>  Sign in
               <span class="caret"></span>
             </a>
                 <div id="login_box">
-                    <div id="login_box_content"></div>
                     <div id="login_box_content">
                         <form id="login_form">
                             <h4>Log in to Localitee</h4>
@@ -104,8 +103,8 @@
         
           <div class="searchbox" role="search">
             
-          	<form action="" id="searchform" method="">
-          		<input type="text" onblur="if (this.value == '') {this.value = 'Search Localitee...';}" onfocus="if (this.value == 'Search Localitee...') {this.value = '';}" value="Search Localitee..." id="search" name="search"/>
+          	<form action="#" id="searchform" method="get" name="searchform">
+          		<input type="text" placeholder="Search Localitee" id="search" name="search"/>
           		<input type="submit" class="btn btn-success" value="Search" name="Submit"/>
           		<div class="advancedsearch">
           			<a href="#" data-toggle="collapse" data-target="#advancedsearch">
@@ -121,9 +120,11 @@
 	          			<li><label for="filternews">News</label>
 	          		<input id="filternews" type="checkbox" value="news" name="filternews"/></li>
 	          			<li><label for="filternews">Events</label>
-	          		<input id="filternews" type="checkbox" value="news" name="filternews"/></li>
+	          		<input id="filterevents" type="checkbox" value="news" name="filterevents"/></li>
 	          			<li><label for="filternews">Business</label>
-	          		<input id="filternews" type="checkbox" value="news" name="filternews"/></li>
+	          		<input id="filterbusiness" type="checkbox" value="news" name="filterbusiness"/></li>
+	          			<li><label for="filternews">Discussions</label>
+	          		<input id="filterdiscussions" type="checkbox" value="news" name="filterdiscussions"/></li>
 	          			
           			</ul>
 
@@ -136,7 +137,7 @@
       </div><!-- /.row-fluid -->
           
           
-          <div class="row-fluid" id="maincontent" role="content">
+          <div class="row-fluid" id="maincontent" role="main">
           
             <div class="span8">        
                      
@@ -149,7 +150,7 @@
 	            		<p>Houston, that may have seemed like a very long final phase. The autotargeting was taking us right into a ... crater, with a large number of big boulders and rocks ... and it required ... flying manually over the rock field to find a reasonably good area.</p>
 	            		<p><a href="#">Read more &rarr;</a></p>
 	            		
-            		</div>
+            		</div><!-- /.featured -->
             	
 	            	<div class="top-news">
 	            	
@@ -173,11 +174,11 @@
 	            		<p><a class="btn btn-success btn-mini" href="#">More news &rarr;</a> <a class="btn btn-success btn-mini" href="#">Add news <i class="icon-plus-sign icon-white"></i></a></p>
 	            		
 	            		
-            		</div>
+            		</div><!-- /.top-news -->
 	            	
 	            	
 	            	
-            	</div>
+            	</div><!-- /.box -->
             	
             	
             	<div class="box">
@@ -204,9 +205,9 @@
 		            		
 		            			</ul>
 		            			<p><a class="btn btn-success btn-mini" href="#">More events &rarr;</a> <a class="btn btn-success btn-mini" href="#">Add an event <i class="icon-plus-sign icon-white"></i></a></p>
-		            			</div>
+		            			</div><!-- /.events -->
 		            			
-		            		</div>
+		            		</div><!-- /.item -->
 		            		<div class="item">
 		            		
 		            			<div class="business">
@@ -225,9 +226,9 @@
 		            		
 		            			</ul>
 		            			<p><a class="btn btn-success btn-mini" href="#">More businesses &rarr;</a> <a class="btn btn-success btn-mini" href="#">Add your business <i class="icon-plus-sign icon-white"></i></a></p>
-		            			</div>
+		            			</div><!-- /.business -->
 
-		            		</div>
+		            		</div><!-- /.item -->
 		            		<div class="item">
 		            		
 		            			<div class="discussion">
@@ -247,27 +248,28 @@
 		            			</ul>
 		            			
 		            			<p><a class="btn btn-success btn-mini" href="#">More discussions &rarr;</a> <a class="btn btn-success btn-mini" href="#">Start a discussion <i class="icon-plus-sign icon-white"></i></a></p>
-		            			</div>
+		            			</div><!-- /.discussions -->
 
-		            		</div>
-		            	</div>
+		            		</div><!-- /.item -->
+		            	</div><!-- /.carousel-inner -->
 		            	
 		            	<!-- Carousel nav -->
 		            	<div class="carousel-nav">
 		            		<a class="" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 		            		<a class="" href="#myCarousel" data-slide="next">&rsaquo;</a>
 		            	</div>
+		            	<!-- Carousel nav -->
 		            
-		            </div>
+		            </div><!-- /.carousel -->
 		            
-		       </div>
+		       </div><!-- /.box -->
             	
             	
               <div class="box">
               	<h2>Example content box</h2>
               	<p>The vehicle explodes, literally explodes, off the pad. The simulator shakes you a little bit, but the actual liftoff shakes your entire body and soul.</p>
               	<p><a class="btn btn-success" href="#">View details &raquo;</a></p>
-              </div>
+              </div><!-- /.box -->
                             
               
             </div><!--/span-->
@@ -277,7 +279,7 @@
             <div class="span4">
             	<div class="box mpu">
 		              <a href=""><img src="img/mpu-sample.jpg" alt="Sample advert"/></a>
-            	</div>
+            	</div><!-- /.box .mpu -->
             	
             	<div class="box">
 		              <ul class="nav nav-tabs">
@@ -301,27 +303,28 @@
 		            		
 		            			</ul>
 			            	<p><a class="btn btn-success" href="#">View details &raquo;</a></p>
-			            </div>
+			            </div><!-- /.tab-pane -->
+			            
 			            <div class="tab-pane" id="tabfeatured">
 			            	<p>Houston, that may have seemed like a very long final phase. The autotargeting was taking us right into a ... crater, with a large number of big boulders and rocks ... and it required ... flying manually over the rock field to find a reasonably good area.</p>
 			            	<p><a class="btn btn-success" href="#">View details &raquo;</a></p>
-			            	</div>
-			       </div>
+			            </div><!-- /.tab-pane -->
+			       </div><!-- /.tab-content -->
 
-            	</div>
+
+            	</div><!-- /.box -->
             	
             	<div class="box">
 		              <h2>Example content box</h2>
 		              <p>The vehicle explodes, literally explodes, off the pad. The simulator shakes you a little bit, but the actual liftoff shakes your entire body and soul. </p>
 		              <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
-            	</div>            	
+            	</div><!-- /.box -->           	
             	
             	
             </div><!--/span-->
             
-            </div>
 
-          </div><!--/row-->
+          </div><!--/row-fluid -->
 
       <footer>
       
@@ -336,15 +339,14 @@
 	      	 	</ul>
 	      	 
 	      	 
-	      	 </div>
+	      	 </div><!-- /.span9 -->
       	 
       	 
 	      	 <div class="span3">
 	      	 
 		      	  <p>&copy; Company 2012</p>
 		      	 
-	      	 </div> 	 
-	      	 
+	      	 </div><!-- /.span3 -->	      	 
       	 </div>
         
       </footer>
